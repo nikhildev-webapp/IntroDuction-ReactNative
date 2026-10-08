@@ -1,13 +1,14 @@
-import { Link } from "expo-router";
-import { Text, View, StyleSheet, Image } from "react-native";
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
 
-const badge = require("../../assets/images/expo-badge.png");
 
-export default function Home() {
+
+export default function index() {
   return (
     <View style={styles.container}>
-      <Link href='/Input' style={styles.Btn}>Click Me</Link>
-      <Image source={badge} style={styles.image}  />
+      <Text>Hello World</Text>
+      <Text>React Native is Super!</Text>
+
     </View>
   );
 }

@@ -1,30 +1,25 @@
-import { Button, Pressable, StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import { Alert } from 'react-native'
-import { Link } from 'expo-router'
+import React from 'react';
+import { Alert, Button, Pressable, StyleSheet, Text, View } from 'react-native';
 
 const Buttons = () => {
     const alertButton = () => {
-        Alert.alert("System Hacked","You have been hacked by Nikhil")
-    }
+        Alert.alert('System Hacked', 'You have been hacked by Nikhil');
+    };
 
     const onPressFunction = () => {
-        Alert.alert("Its a Pressable Button",'Different from Button Component')
-    }
-  return (
-    <View style={styles.container}>
-          <Text style={styles.HText}>Buttons</Text>
-          <Button
-              title="Click Me"
-              onPress={alertButton}
-          />
-          <Pressable onPress={onPressFunction} style={styles.PressBtn}>
-                <Text>I'm pressable!</Text>
-          </Pressable>
-          <Link href="/" style={styles.Btn}>Go Back</Link>
-    </View>
-  )
-}
+        Alert.alert('Its a Pressable Button', 'Different from Button Component');
+    };
+
+    return (
+        <View style={styles.container}>
+            <Text style={styles.HText}>Buttons</Text>
+            <Button title="Click Me" onPress={alertButton} />
+            <Pressable onPress={onPressFunction} style={styles.PressBtn}>
+                <Text>I&apos;m pressable!</Text>
+            </Pressable>
+        </View>
+    );
+};
 
 export default Buttons
 
